@@ -2,8 +2,9 @@ name: LINE Notify # ワークフロー名
 # 発火タイミング  日本時刻の朝7時に定期処理(分 時 日 月 曜日(0が日曜))  UTC の 02:00 は JST だと 11:00 。
 #(UTC)日本時刻から9時間マイナスで設定する
 on:
-  schedule:
-    - cron: '50 12 * * *'
+  push:
+#   schedule:
+#     - cron: '50 12 * * *'
 env:
   LINE_ACCESS_TOKEN: ${{secrets.LINE_ACCESS_TOKEN}} ## 
 jobs:
