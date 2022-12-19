@@ -6,7 +6,7 @@ on:
 #   schedule:
 #     - cron: '50 12 * * *'
 env:
-  LINE_ACCESS_TOKEN: ${{secrets.LINE_ACCESS_TOKEN}} ## 
+  ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}} ## 
 jobs:
   build:
     runs-on: ubuntu-latest # Ubuntuの最新版環境内で処理を実行することを指定
