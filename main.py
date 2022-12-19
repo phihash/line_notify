@@ -1,6 +1,5 @@
 import requests , os
 from datetime import datetime
-from config import CONFIG
 
 def main():
     now = datetime.now()
